@@ -1,10 +1,6 @@
 class TodosController < ApplicationController
   def index
-
-  end
-
-  def about
-
+    @todos = Todo.all
   end
 
   def new
