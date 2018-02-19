@@ -1,1 +1,0 @@
-https://www.udemy.com/pro-ruby-on-rails-rails5/
