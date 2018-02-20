@@ -6,3 +6,5 @@
 - add resources :article in routes.rb
 - `bin/rails generate controller Articles`
 
+- `bin/rails generate model Article title:string text:text`
+- `bin/rails db:migrate`
