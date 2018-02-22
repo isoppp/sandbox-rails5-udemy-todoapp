@@ -1,4 +1,6 @@
 class ArticlesController < ApplicationController
+  http_basic_authenticate_with name: "test", password: "test", except: [:index, :show] #basic認証がないとindexとshow以外は許可されない（認証的なサンプル）
+
   def index
     @articles = Article.all
   end
