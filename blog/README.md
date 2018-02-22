@@ -11,4 +11,8 @@
 
 - `bin/rails generate model Comment commenter:string body:text article:references`
 - (generate associating table)
+- generate controller Comments
+
+- generate modelは単数
+- generate controllerは複数
 
