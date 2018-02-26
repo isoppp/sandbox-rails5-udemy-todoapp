@@ -37,29 +37,20 @@
 - form helper
     - `<%= form_for %>`
 
+## heroku deploy
 
+`adddatabase.yml`
 
-## initial README
+```
+production:
+  url: <%= ENV['DATABASE_URL'] %>
+```
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+add gemfile for production
+heroku does not support sqlite
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+```
+group :production do
+  gem 'pg', '~> 0.18.0'
+end
+```
